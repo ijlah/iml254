@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Journey</title>
+    <link rel="stylesheet" href="style-educations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <nav>
+            <a href="index.html">
+                <img src="image/logoo.png" class="logo" alt="Logo"> 
+            </a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="myself.html">MYSELF</a></li>
+                <li><a href="educations.html">EDUCATIONS</a></li>
+                <li class="dropdown">
+                    <a href="#">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="family.html">Family</a>
+                        <a href="friends.html">Friends</a>
+                        <a href="vacations.html">Vacations</a>
+                        <a href="playlist.html">Playlist</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>My Educational Journey</h1>
+            <p>From kindergarten to diploma, explore my academic milestones.</p>
+            <div class="slider">
+                <img src="image/preschool.jpg" class="slide-photo" alt="My Photo 1">
+                <img src="image/highschool.jpg" class="slide-photo" alt="My Photo 2">
+                <img src="image/diploma.jpg" class="slide-photo" alt="My Photo 3">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="stage">
+        <div class="stage-content">
+            <h2>Kindergarten</h2>
+            <p>Starting my journey at 6 years old, where the basics of learning and fun intertwined.</p>
+            <img src="image/skkt.jpg" alt="Kindergarten" class="stage-image">
+            <p>Prasekolah Sekolah Kebangsaan Kampung Tunku (SKKT)</p>
+        </div>
+    </section>
+
+    <section class="stage">
+        <div class="stage-content">
+            <h2>Middle School (7-10 years old)</h2>
+            <p>Building foundational knowledge and discovering new interests.</p>
+            <img src="image/skkt.jpg" alt="Middle School 7-10 years old" class="stage-image">
+            <p> Sekolah Kebangsaan Kampung Tunku (SKKT)</p>
+        </div>
+    </section>
+
+    <section class="stage">
+        <div class="stage-content">
+            <h2>Middle School (11-12 years old)</h2>
+            <p>Transitioning to a new middle school, expanding my horizons and taking on more challenges.</p>
+            <img src="image/sksj.jpeg" alt="Middle School 11-12 years old" class="stage-image">
+            <p>Sekolah Kebangsaan Sjangkang Jaya (SKSJ)</p>
+        </div>
+    </section>
+
+    <section class="stage">
+        <div class="stage-content">
+            <h2>High School</h2>
+            <p>Delving deeper into subjects, preparing for the future, and making lifelong memories.</p>
+            <img src="image/samttar.jpg" alt="High School" class="stage-image">
+            <p>SAMT Tengku Ampuan Rahimah (SAMTTAR)</p>
+        </div>
+    </section>
+
+    <section class="stage">
+        <div class="stage-content">
+            <h2>Diploma</h2>
+            <p>Specializing in my chosen field and acquiring advanced knowledge and skills.</p>
+            <img src="image/uitm.jpg" alt="Diploma" class="stage-image">
+            <p>UiTM Kedah</p>
+        </div>
+    </section>
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 IJLAH WAJIHAH. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide-photo");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+</body>
+</html>

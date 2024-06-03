@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+  position: relative;
+}
+
+nav{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1B1717; 
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FF33CA;
+}
+
+nav ul li:hover a {
+  color: #FF33CA;
+}
+
+.logo {
+   margin-left: 20px;
+   width: 120px; 
+   height: auto;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1B1717;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  background-color: #1B1717; 
+  padding: 50px;
+  color: #fff; 
+  line-height: 1.8;
+  margin-bottom: 0; 
+  font-size: 18px;
+  font-family: 'Poppins'sans-serif;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.content-col-1{
+    flex-basis: 30%;
+}
+
+.content-col-1 img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.content-col-2{
+    flex-basis: 65%;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Tahoma', sans-serif;
+    color: #FF33CA;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.sub-title{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'monospace', sans-serif; 
+    color: #fff;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+body {
+  background-color: #1B1717;
+}
+
+.video-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1B1717;
+}
+
+.video-header-title {
+  color: #FF33CA;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.video-section {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.video-container {
+  flex-basis: 45%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hobby-images img,
+.food-images img {
+  width: calc(100% - 20px); /* Adjust the width */
+  max-width: 200px; /* Set a maximum width for the images */
+  border-radius: 10px; /* Adjust border-radius for a smoother look */
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 45%;
+  margin: 0 auto; /* Center the slider horizontally */
+  overflow: hidden;
+  border-radius: 20px; /* Add border-radius for a smoother look */
+  padding: 20px; /* Add padding */
+ border-image-slice: 1;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.hobby-section p,
+.comfort-food-section p {
+  color: #fff;
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 0 20px; /* Add padding to the paragraphs */
+}
+
+.comfort-food-section {
+  padding: 20px; /* Add padding to make the section smaller */
+}
+
+.youtube-icon {
+    font-size: 24px;
+    color: red;
+    transition: transform 0.3s ease;
+}
+
+.youtube-icon:hover {
+    transform: scale(1.1);
+}
+
+audio {
+    display: none;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF33CA;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #E600AC;
+}
+
+.footer-content {
+  max-width: 100%; 
+  margin: 0 auto; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 10px; 
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+}

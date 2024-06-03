@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Personal Website</title>
+     <link rel="stylesheet" href="style-playlist.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <nav>
+      <a href="index.html">
+      <img src="image/logoo.png" class="logo"> 
+      </a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="myself.html">MYSELF</a></li>
+        <li><a href="educations.html">EDUCATIONS</a></li>
+        <li class="dropdown">
+          <a href="#">ABOUT</a>
+          <div class="dropdown-content">
+            <a href="#">Family</a>
+            <a href="friends.html">Friends</a>
+            <a href="vacations.html">Vacations</a>
+            <a href="#">Playlist</a>
+          </div>
+        </li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav> 
+  </div>
+</header>
+
+<main>
+    <div class="playlist-container">
+        <h1>FAVOURITE PLAYLIST</h1>
+        <br><br>
+        <h2>#krb</h2>
+        <br><br>
+        <ul class="playlist">
+            <li class="song">
+                <img src="image/wonstein.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/wonstein.mp3')">
+                <div class="song-info">
+                    <span class="song-title">It's not beautiful and it doesn't hurt</span> - <span class="artist">Wonstein</span>
+                </div>
+               
+            </li>
+            <li class="song">
+                <img src="image/dept.jpg" alt="Song 2" class="song-image" onclick="playAudio('audio/whitesnow.mp3')">
+                <div class="song-info">
+                    <span class="song-title">White Snow</span> - <span class="artist">Dept ft. prettyhappy</span>
+                </div>
+                
+            </li>
+            <li class="song">
+                <img src="image/mia.jpg" alt="Song 3" class="song-image" onclick="playAudio('audio/mia.mp3')">
+                <div class="song-info">
+                    <span class="song-title">MIA</span> - <span class="artist">GEMINI, CAMO, WOODZ</span>
+                </div>
+             
+            </li>
+            <li class="song">
+                <img src="image/nostalgia.jpg" alt="Song 4" class="song-image" onclick="playAudio('audio/nostalgia.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Nostalgia</span> - <span class="artist">Junny ft.JAY B</span>
+                </div>
+               
+            </li>
+            <li class="song">
+                <img src="image/seori.jpg" alt="Song 5" class="song-image" onclick="playAudio('audio/seori.mp3')">
+                <div class="song-info">
+                    <span class="song-title">The long night</span> - <span class="artist">Seori ft. giriboy</span>
+                </div>
+                
+            </li>
+        </ul>
+
+        <h2>#indie</h2>
+        <br><br>
+        <ul class="playlist">
+            <li class="song">
+                <img src="image/505.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/505.mp3')">
+                <div class="song-info">
+                    <span class="song-title">505</span> - <span class="artist">Artic Monkeys</span>
+                </div>
+                
+            </li>
+             <li class="song">
+                <img src="image/hotelugly.jpg" alt="Song 2" class="song-image" onclick="playAudio('audio/hotelugly.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Shut up my mom is calling</span> - <span class="artist">Hotel Ugly</span>
+                </div>
+              
+            </li> 
+             <li class="song">
+                <img src="image/jannabi.jpg" alt="Song 3" class="song-image" onclick="playAudio('audio/jannabi.mp3')">
+                <div class="song-info">
+                    <span class="song-title">for lovers who hesitate</span> - <span class="artist">Jannabi</span>
+                </div>
+               
+            </li>
+             <li class="song">
+                <img src="image/w2e.jpg" alt="Song 4" class="song-image"  onclick="playAudio('audio/w2e.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Dried Flower</span> - <span class="artist">Wave to Earth</span>
+                </div>
+               
+            </li>
+  	     <li class="song">
+                <img src="image/sweaterweather.jpg" alt="Song 5" class="song-image"  onclick="playAudio('audio/sweaterweather.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Sweater Weather</span> - <span class="artist">The Neighborhood</span>
+                </div>
+             
+            </li>
+        </ul>
+
+        <h2>#kpop</h2>
+        <br><br>
+        <ul class="playlist">
+            <li class="song">
+                <img src="image/txt.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/dejavu.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Deja Vu</span> - <span class="artist">TXT</span>
+                </div>
+               
+            </li>
+            <li class="song">
+                <img src="image/kof.jpg" alt="Song 2" class="song-image" onclick="playAudio('audio/nothing.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Nothing</span> - <span class="artist">KISS OF LIFE</span>
+                </div>
+             
+            </li>
+            <li class="song">
+                <img src="image/bnd.jpg" alt="Song 3" class="song-image" onclick="playAudio('audio/dearmydarling.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Dear. My Darling</span> - <span class="artist">BOYNEXTDOOR</span>
+                </div>
+            
+            </li>
+            <li class="song">
+                <img src="image/day6.jpg" alt="Song 4" class="song-image" onclick="playAudio('audio/lettinggo.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Letting Go</span> - <span class="artist">Day 6</span>
+                </div>
+              
+            </li>
+            <li class="song">
+                <img src="image/nflying.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/nflying.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Blue Moon</span> - <span class="artist">N.Flying</span>
+                </div>
+            
+            </li>
+        </ul>
+
+        <h2>#pop</h2>
+        <br><br>
+        <ul class="playlist">
+            <li class="song">
+                <img src="image/supernatural.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/supernatural.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Supernatural</span> - <span class="artist">Ariana Grande</span>
+                </div>
+                
+            </li>
+            <li class="song">
+                <img src="image/theweeknd.jpg" alt="Song 2" class="song-image" onclick="playAudio('audio/theweeknd.mp3')">
+                <div class="song-info">
+                    <span class="song-title">In The Night</span> - <span class="artist">The Weeknd</span>
+                </div>
+              
+            </li>
+            <li class="song">
+                <img src="image/troye.jpg" alt="Song 3" class="song-image" onclick="playAudio('audio/troye.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Strawberries & Cigarettes</span> - <span class="artist">Troye Sivan</span>
+                </div>
+                
+            </li>
+            <li class="song">
+                <img src="image/maniac.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/maniac.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Maniac</span> - <span class="artist">Conan Gray</span>
+                </div>
+                
+            </li>
+            <li class="song">
+                <img src="image/saturn.jpg" alt="Song 1" class="song-image" onclick="playAudio('audio/saturn.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Saturn</span> - <span class="artist">SZA</span>
+                </div>
+             
+            </li>
+        </ul>
+
+        <h2>#indonesian</h2>
+        <br><br>
+        <ul class="playlist">
+            <li class="song">
+                <img src="image/fabio.jpg" alt="Song 5" class="song-image" onclick="playAudio('audio/fabio.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Tanpa Rasa Bersalah</span> - <span class="artist">Fabio Asher</span>
+                </div>
+             
+            </li>
+            <li class="song">
+                <img src="image/anggis.jpg" alt="Song 5" class="song-image" onclick="playAudio('audio/anggis.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Kisah Tanpa Dirimu</span> - <span class="artist">Anggis Devika</span>
+                </div>
+               
+            </li> 
+            <li class="song">
+                <img src="image/rossa.jpg" alt="Song 5" class="song-image" onclick="playAudio('audio/rossa.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Terlanjur Cinta</span> - <span class="artist">Rosaa ft. Pasha Uggu</span>
+                </div>
+               
+            </li>
+            <li class="song">
+                <img src="image/devano.jpg" alt="Song 5" class="song-image" onclick="playAudio('audio/devano.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Surat Hati</span> - <span class="artist">Devano</span>
+               </div>
+          
+            </li>
+            <li class="song">
+                <img src="image/afgan.jpg" alt="Song 5" class="song-image" onclick="playAudio('audio/afgan.mp3')">
+                <div class="song-info">
+                    <span class="song-title">Ku Dengannya Kau Dengan Dia</span> - <span class="artist">Afgan</span>
+                </div>
+              
+            </li>
+        </ul>
+
+    </div>
+<audio id="audioPlayer" controls style="display:none;"></audio>
+</main>
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 IJLAH WAJIHAH. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script-playlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Through the Years</title>
+    <link rel="stylesheet" href="style-friends.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <nav>
+           <a href="index.html">
+           <img src="image/logoo.png" class="logo"> 
+           </a>
+           <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="myself.html">MYSELF</a></li>
+                <li><a href="educations.html">EDUCATION</a></li>
+                <li class="dropdown">
+                    <a href="#">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="family.html">Family</a>
+                        <a href="friends.html">Friends</a>
+                        <a href="vacations.html">Vacations</a>
+                        <a href="playlist.html">Playlist</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="intro">
+        <h1>Friends Through the Years</h1>
+        <p>Welcome to my website where I share memories of my friends from high school to diploma. These are the people who have been with me through thick and thin (⁠´⁠ε⁠｀⁠ ⁠).</p>
+    </section>
+
+    <section class="friends">
+        <h2>High School Friends</h2>
+
+        <div class="video-container">
+            <video controls>
+                <source src="video/highschool.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="image/highschool1.jpg" alt="High School Friend 1">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool2.jpg" alt="High School Friend 2">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool3.jpg" alt="High School Friend 3">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool4.jpg" alt="High School Friend 4">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool5.jpg" alt="High School Friend 5">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool6.jpg" alt="High School Friend 6">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool7.jpg" alt="High School Friend 7">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool8.jpg" alt="High School Friend 8">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool9.jpg" alt="High School Friend 9">
+            </div>
+            <div class="gallery-item">
+                <img src="image/highschool10.jpg" alt="High School Friend 10">
+            </div>
+             <div class="gallery-item">
+                <img src="image/highschool11.jpg" alt="High School Friend 11">
+            </div>
+        </div>
+    </section>
+
+    <section class="friends">
+        <h2>Diploma Friends</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="image/diploma1.jpg" alt="Diploma Friend 1">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma2.jpg" alt="Diploma Friend 2">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma3.jpg" alt="Diploma Friend 3">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma4.jpg" alt="Diploma Friend 4">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma5.jpg" alt="Diploma Friend 5">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma6.jpg" alt="Diploma Friend 6">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma7.jpg" alt="Diploma Friend 7">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma8.jpg" alt="Diploma Friend 8">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma9.jpg" alt="Diploma Friend 9">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma10.jpg" alt="Diploma Friend 10">
+            </div>
+            <div class="gallery-item">
+                <img src="image/diploma11.jpg" alt="Diploma Friend 11"> 
+           </div>
+         </div>
+    </section>
+
+<audio id="background-audio" controls loop>
+        <source src="audio/semaniscinta.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 IJLAH WAJIHAH. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('background-audio');
+        audio.play().catch(error => {
+            console.log('Autoplay was prevented.');
+        });
+
+        document.body.addEventListener('click', () => {
+            audio.play().catch(error => {
+                console.log('Play triggered but still prevented.');
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
